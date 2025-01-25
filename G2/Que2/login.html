@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script>
+        function validateForm() {
+            var loginID = document. Forms["loginForm"]["loginID"].value;
+            var password = document. Forms["loginForm"]["password"].value;
+            if (loginID == "" || password == "") {
+                alert("Login ID and Password must not be empty.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<h2>Login Form</h2>
+<form name="loginForm" action="Login" method="post" onsubmit="return validateForm()">
+    <label for="loginID">Login ID:</label>
+    <input type="text" id="loginID" name="loginID" placeholder="Enter your Login ID" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your Password" required><br><br>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>
