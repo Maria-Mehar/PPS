@@ -1,0 +1,13 @@
+CREATE DATABASE University;
+
+USE University;
+
+CREATE TABLE loginInfo (
+    loginID VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    PRIMARY KEY (loginID)
+);
+
+INSERT INTO loginInfo (loginID, password) VALUES
+('admin', 'admin123'),
+('user1', 'password1');
