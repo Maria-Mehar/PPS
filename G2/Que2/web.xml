@@ -1,0 +1,34 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Login</servlet-class> <!-- Update if using packages -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Success</servlet-name>
+    <servlet-class>Success</servlet-class> <!-- Update if using packages -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Success</servlet-name>
+    <url-pattern>/Success</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Error</servlet-name>
+    <servlet-class>Error</servlet-class> <!-- Update if using packages -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Error</servlet-name>
+    <url-pattern>/Error</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
