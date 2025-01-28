@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Calculator</h2>
+        <div>
+            <label for="input1">First Number:</label>
+            <input type="number" id="input1">
+        </div>
+        <div>
+            <label for="input2">Second Number:</label>
+            <input type="number" id="input2">
+        </div>
+        <div>
+            <label for="output">Result:</label>
+            <input type="text" id="output" class="output-field" readonly>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <button onclick="calculate('sum')">Sum</button>
+            <button onclick="calculate('subtract')">Subtraction</button>
+            <button onclick="calculate('multiply')">Multiply</button>
+            <button onclick="calculate('divide')">Divide</button>
+        </div>
+        <p class="error-message" id="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
