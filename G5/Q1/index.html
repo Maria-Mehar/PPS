@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping and Billing Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="outer-container">
+    <!-- Shipping Information Section -->
+    <div class="form-section">
+      <div class="form-header">
+        <span>Shipping Information</span>
+      </div>
+      <div class="form-box">
+        <label for="siName">Name:</label>
+        <input type="text" id="siName" name="siName" placeholder="Enter your name">
+        <br>
+        <label for="siZip">Zip code:</label>
+        <input type="text" id="siZip" name="siZip" placeholder="Enter your zip code">
+      </div>
+    </div>
+
+    <br>
+    <input type="checkbox" id="sameAsShipping" name="sameAsShipping" onchange="billingInformation()">
+    <label for="sameAsShipping">Is the Billing Information the Same?</label><br>
+
+    <!-- Billing Information Section -->
+    <div class="form-section">
+      <div class="form-header">
+        <span>Billing Information</span>
+      </div>
+      <div class="form-box">
+        <label for="biName">Name:</label>
+        <input type="text" id="biName" name="biName"><br>
+        <label for="biZip">Zip code:</label>
+        <input type="text" id="biZip" name="biZip">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
