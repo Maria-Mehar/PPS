@@ -1,0 +1,8 @@
+CREATE DATABASE University;
+USE University;
+CREATE TABLE userInfo (
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+INSERT INTO userInfo (username, password) VALUES ('user1', 'password1');
+INSERT INTO userInfo (username, password) VALUES ('user2', 'password2');
