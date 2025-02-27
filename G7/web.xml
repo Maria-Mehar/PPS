@@ -1,0 +1,12 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>taskServlet</servlet-name>
+    <servlet-class>taskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>taskServlet</servlet-name>
+    <url-pattern>/taskServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
