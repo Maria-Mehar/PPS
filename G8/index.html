@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: auto;
+        }
+        input, button {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+        label {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Registration</h2>
+
+<form id="registrationForm" action="register" method="post">
+
+    <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+    <label id="nameError"></label><br>
+
+    <input type="email" id="email" name="email" placeholder="Email Address">
+    <label id="emailError"></label><br>
+
+    <input type="text" id="studentId" name="studentId" placeholder="Student ID">
+    <label id="idError"></label><br>
+
+    <input type="password" id="password" name="password" placeholder="Password">
+    <label id="passwordError"></label><br>
+
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+    <label id="confirmPasswordError"></label><br>
+
+    <button type="submit">Register</button>
+
+</form>
+<script src="validation.js"></script>
+
+</body>
+
+</html>
