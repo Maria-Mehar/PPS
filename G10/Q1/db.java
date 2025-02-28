@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class MySQLConnection {
+public class db{
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/your_database"; // Replace with your database
         String user = "root"; // Replace with your MySQL username
